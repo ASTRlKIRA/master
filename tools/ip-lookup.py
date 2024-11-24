@@ -76,3 +76,7 @@ if __name__ == "__main__":
         print(f"{fade("[")}{time}{fade("]")} ISP: {result['isp']}")
         time = datetime.now().strftime("%H:%M:%S")
         print(f"{fade("[")}{time}{fade("]")} Organization: {result['org']}")
+
+    time = datetime.now().strftime("%H:%M:%S")
+    input(f"{fade("[")}{time}{fade("]")} Press any key to go back.")
+    os.system("python master.py")
