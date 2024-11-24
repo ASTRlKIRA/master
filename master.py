@@ -36,7 +36,7 @@ menu1 = f"""
 """
 
 def main():
-    os.system("cls")
+    cls()
     print(Colorate.Horizontal(Colors.purple_to_blue, banner, 1))
     print(menu1)
     print(f"{fade('┌──(')}{username}{fade('@')}master{fade(')')}")
