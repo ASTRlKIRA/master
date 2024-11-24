@@ -30,7 +30,7 @@ menu1 = f"""
 {fade("│         └─────────────────┘         │              └───────┘              │            └───────────┘")}
 {fade("├─ [")}01{fade("]")} Website Vulnerability Scanner {fade("├─")} {fade("[")}05{fade("]")} Username Lookup               {fade("├─")}
 {fade("├─ [")}02{fade("]")} Website Crawler               {fade("├─")} {fade("[")}06{fade("]")} Phone Number Lookup           {fade("├─")}
-{fade("├─ [")}03{fade("]")} IP Info                       {fade("├─")}
+{fade("├─ [")}03{fade("]")} IP Info                       {fade("├─")} {fade("[")}07{fade("]")} Email Lookup                  {fade("├─")}
 {fade("├─ [")}04{fade("]")} IP Port Scanner               {fade("├─")}
 {fade("└─────────────────────────────────────┴─────────────────────────────────────┴─────────────────────────────────────┘")}
 """
@@ -54,6 +54,8 @@ def main():
         os.system("python tools/username-lookup.py")
     elif cmd == "06":
         os.system("python tools/phone-number-lookup.py")
+    elif cmd == "07":
+        os.system("python tools/email-lookup.py")
 
 if __name__ == "__main__":
     main()
