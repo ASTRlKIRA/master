@@ -30,12 +30,12 @@ def interesting(url):
             if response.status_code == 200:
                 found += 1
                 time = datetime.now().strftime("%H:%M:%S")
-                print(f"{fade("[")}{time}{fade("]")} {fade("[")}Vulnerability{fade("]")} Interesting Path Found: {Colorate.Color(Colors.green, f"{path}")}")
+                print(f"{fade("[")}{time}{fade("]")} Interesting Path Found: {Colorate.Color(Colors.green, f"{path}")}")
     except:
         pass
     if found == 0:
         time = datetime.now().strftime("%H:%M:%S")
-        print(f"{fade("[")}{time}{fade("]")} {fade("[")}Vulnerability{fade("]")} Interesting Paths? {Colorate.Color(Colors.red, "False")}")
+        print(f"{fade("[")}{time}{fade("]")} Interesting Paths? {Colorate.Color(Colors.red, "False")}")
 
 def sensitive(url):
     sensitive_files = [
@@ -76,12 +76,12 @@ def sensitive(url):
                 if any(file in response.text for file in sensitive_files):
                     found += 1
                     time = datetime.now().strftime("%H:%M:%S")
-                    print(f"{fade("[")}{time}{fade("]")} {fade("[")}Vulnerability{fade("]")} Sensitive File Found: {Colorate.Color(Colors.green, f"{file}")}")
+                    print(f"{fade("[")}{time}{fade("]")} Sensitive File Found: {Colorate.Color(Colors.green, f"{file}")}")
     except:
         pass
     if found == 0:
         time = datetime.now().strftime("%H:%M:%S")
-        print(f"{fade("[")}{time}{fade("]")} {fade("[")}Vulnerability{fade("]")} Sensitive Files? {Colorate.Color(Colors.red, "False")}")
+        print(f"{fade("[")}{time}{fade("]")} Sensitive Files? {Colorate.Color(Colors.red, "False")}")
 
 def xss(url):
     xss_provocations = [
@@ -105,13 +105,13 @@ def xss(url):
             if any(xss_indicator in response.text for xss_indicator in xss_indicators):
                 found += 1
                 time = datetime.now().strftime("%H:%M:%S")
-                print(f"{fade("[")}{time}{fade("]")} {fade("[")}Vulnerability{fade("]")} Xss Found at: {Colorate.Color(Colors.green, f"{xss}")}")
+                print(f"{fade("[")}{time}{fade("]")} Xss Found at: {Colorate.Color(Colors.green, f"{xss}")}")
                 break
     except:
         pass
     if found == 0:
         time = datetime.now().strftime("%H:%M:%S")
-        print(f"{fade("[")}{time}{fade("]")} {fade("[")}Vulnerability{fade("]")} Xss vulnerability? {Colorate.Color(Colors.red, "False")}")
+        print(f"{fade("[")}{time}{fade("]")} Xss vulnerability? {Colorate.Color(Colors.red, "False")}")
 
 def sql(url):
     sql_indicators = [
@@ -131,13 +131,13 @@ def sql(url):
             if any(sql_indicator in response.text for sql_indicator in sql_indicators):
                 found += 1
                 time = datetime.now().strftime("%H:%M:%S")
-                print(f"{fade("[")}{time}{fade("]")} {fade("[")}Vulnerability{fade("]")} Sql Injection Found")
+                print(f"{fade("[")}{time}{fade("]")} Sql Injection Found")
                 break
     except:
         pass
     if found == 0:
         time = datetime.now().strftime("%H:%M:%S")
-        print(f"{fade("[")}{time}{fade("]")} {fade("[")}Vulnerability{fade("]")} Sql vulnerability? {Colorate.Color(Colors.red, "False")}")
+        print(f"{fade("[")}{time}{fade("]")} Sql vulnerability? {Colorate.Color(Colors.red, "False")}")
 
 if __name__ == "__main__":
     banner = r'''
