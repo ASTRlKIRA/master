@@ -30,7 +30,7 @@ menu1 = f"""
 {fade("│         └─────────────────┘         │              └───────┘              │            └───────────┘")}
 {fade("├─ [")}01{fade("]")} Website Vulnerability Scanner {fade("├─")} {fade("[")}05{fade("]")} Username Lookup               {fade("├─")}
 {fade("├─ [")}02{fade("]")} Website Crawler               {fade("├─")} {fade("[")}06{fade("]")} Phone Number Lookup           {fade("├─")}
-{fade("├─ [")}03{fade("]")} IP Info                       {fade("├─")} {fade("[")}07{fade("]")} Email Lookup                  {fade("├─")}
+{fade("├─ [")}03{fade("]")} IP Info                       {fade("├─")} {fade("[")}07{fade("]")} Email Lookup        {fade("[")}PC ONLY{fade("]")} {fade("├─")}
 {fade("├─ [")}04{fade("]")} IP Port Scanner               {fade("├─")}
 {fade("└─────────────────────────────────────┴─────────────────────────────────────┴─────────────────────────────────────┘")}
 """
